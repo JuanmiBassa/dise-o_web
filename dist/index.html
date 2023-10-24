@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horari CFGS 2</title>
+    <style>:root {
+  --esliceu: #c43737;
+  --border: #858585;
+  --EIE: #f0f4c3;
+  --DIW: #f8bbd0;
+  --DWEC: #fff9c4;
+  --DWES: #d1c4e9;
+  --DAW: #bbdefb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+}
+
+h1 {
+  color: var(--esliceu);
+  text-align: start;
+  width: 80vw;
+}
+
+#table-container {
+  width: 80vw;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: center;
+  border: 1px var(--border) solid;
+  padding: 5px;
+}
+
+td {
+  font-size: 15px;
+}
+
+.time {
+  font-weight: bold;
+}
+
+.empresa-iniciativa {
+  background-color: var(--EIE);
+}
+
+.diseny-web {
+  background-color: var(--DIW);
+}
+
+.desenv-client {
+  background-color: var(--DWEC);
+}
+
+.desenv-serv {
+  background-color: var(--DWES);
+}
+
+.desplg-appWeb {
+  background-color: var(--DAW);
+}
+
+@media screen and (width <= 768px) {
+  h1 {
+    width: 90vw;
+  }
+
+  #table-container {
+    width: 90vw;
+    overflow-x: scroll;
+  }
+}
+
+</style>
+</head>
+
+<body>
+    <main>
+        <h1>Es Liceu</h1>
+        <div id="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th colspan="6">2n CFGS Desenvolupament d'Aplicacions Web</th>
+                    </tr>
+                    <tr>
+                        <th>Dilluns</th>
+                        <th>Dimarts</th>
+                        <th>Dimecres</th>
+                        <th>Dijous</th>
+                        <th>Divendres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">15:00</td>
+                        <td class="empresa-iniciativa">Empresa i iniciativa emprenedora<br>SANTI BONILLO</td>
+                        <td rowspan="2" class="empresa-iniciativa">Empresa i iniciativa emprenedora<br>SANTI BONILLO
+                        </td>
+                        <td class="desplg-appWeb">Desplegament d'aplicacions web<br>MANUEL MARTÍNEZ</td>
+                        <td rowspan="2" class="desenv-serv">Desenvolupament web en entorn servidor<br>PERE NEGRE</td>
+                        <td rowspan="4" class="desenv-serv">Desenvolupament web en entorn servidor<br>PERE NEGRE</td>
+                    </tr>
+                    <tr>
+                        <td class="time">15:55</td>
+                        <td rowspan="2" class="desenv-client">Desenvolupament web en entorn client<br>ARTEM RUDENKO</td>
+                        <td rowspan="2" class="diseny-web">Disseny d'interficies web<br>ARTEM RUDENKO</td>
+                    </tr>
+                    <tr>
+                        <td class="time">16:50</td>
+                        <td rowspan="2" class="desenv-client">Desenvolupament web en entorn client<br>ARTEM RUDENKO</td>
+                        <td rowspan="2" class="desplg-appWeb">Desplegament d'aplicacions web<br>MANUEL MARTÍNEZ</td>
+                    </tr>
+                    <tr>
+                        <td class="time">18:15</td>
+                        <td class="desenv-serv">Desenvolupament web en entorn servidor<br>PERE NEGRE</td>
+                        <td rowspan="3" class="desenv-serv">Desenvolupament web en entorn servidor<br>PERE NEGRE</td>
+                    </tr>
+                    <tr>
+                        <td class="time">19:10</td>
+                        <td rowspan="2" class="desplg-appWeb">Desplegament d'aplicacions web<br>MANUEL MARTÍNEZ</td>
+                        <td rowspan="2" class="diseny-web">Disseny d'interficies web<br>ARTEM RUDENKO</td>
+                        <td rowspan="2" class="diseny-web">Disseny d'interficies web<br>ARTEM RUDENKO</td>
+                        <td rowspan="2" class="desenv-client">Desenvolupament web en entorn client<br>ARTEM RUDENKO</td>
+                    </tr>
+                    <tr>
+                        <td class="time">20:05</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </main>
+<script src="/diseny_web.3464ddca.js"></script></body>
+
+</html>
